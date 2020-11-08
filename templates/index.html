@@ -13,8 +13,8 @@
     <!-- Leaflet CSS -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
-      integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
     />
 
@@ -24,7 +24,6 @@
       type="text/css"
       href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
-    <link rel="stylesheet" href="static/css/leaflet.extra-markers.min.css" />
 
     <!-- Bootstrap -->
     <link
@@ -34,6 +33,11 @@
       crossorigin="anonymous"
     />
 
+
+    <!-- MapBox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
   </head>
@@ -42,9 +46,7 @@
     <!-- The div that holds our map -->
     <div class="container-fluid">
       <div class="row fill-height">
-        <div class="col-md-8" id="map-id">
-
-        </div>
+        <div class="col-md-8" id="map-id"></div>
         <div class="col-md-4">
           <div class="row">
             <h3 class="header">Endangered Species</h3>
@@ -62,12 +64,11 @@
                 <!-- <tr> No data available</tr> -->
               </tbody>
             </table>
-  
           </div>
         </div>
       </div>
     </div>
- 
+
     <!-- Species Table-->
 
     <!-- D3 -->
@@ -81,8 +82,8 @@
 
     <!-- Leaflet JavaScript -->
     <script
-      src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-      integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
 
